@@ -1,9 +1,9 @@
 .controller.edit {
-  background: url(gsbase.svg);
+  background: url(gsbase.png);
 }
 
 .edit.disconnected {
-  background: url(gsdisconnected.svg);
+  background: url(gsdisconnected.png);
 }
 
 .edit .quadrant {
@@ -27,7 +27,7 @@
 }
 
 .edit .back, .edit .start {
-    background: url(start-select.svg);
+    background: url(start-select.png);
     width: 33px;
     height: 33px;
     opacity: 0;
