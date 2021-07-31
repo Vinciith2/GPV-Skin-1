@@ -55,15 +55,15 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     display: none;
 }
 .custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
-    width: 586px;
-    height: 65px;
+    width: 89px;
+    height: 122px;
     position: absolute;
     left: 99px;
 }
 .custom .trigger{/* These are the actual triggers themselves */
-    width:86px;
-    height:65px;
-    background: url(ps3-assets/triggers.png);
+    width:89px;
+    height:122px;
+    background: url(trigger.png);
     opacity: 0;
 }
 /* The left and right classes below are used to position the triggers
@@ -80,15 +80,15 @@ above to achieve the desired position. */
 /* The bumpers follow the same methodology as the triggers in terms of
 placement */
 .custom .bumper{
-    width: 89px;
-    height: 28px;
-    background: url(ps3-assets/bumpers.png);
+    width: 171px;
+    height: 63px;
+    background: url(bumper.png);
     opacity: 0;
 }
 .custom .bumpers{
     position: absolute;
-    width: 586px;
-    height: 28px;
+    width: 171px;
+    height: 63px;
     left: 99px;
     top: 72px;
 }
@@ -100,11 +100,11 @@ placement */
   and I can just rotate them in the browser? Also, note that you most likely won't need
   to use a browser speficic prefix unless it's something that is indeed browser specific.
   NOTE: CLR Browser is basically chrome, so you use '-webkit-' as the browser prefix. */
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
     float: left;
 }
 .custom .bumper.right{
+    -webkit-transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     float: right;
 }
 /* This bit of code is for the player indicator, which is represented in
@@ -113,9 +113,9 @@ PS3 controller but it'd be pointless for me to change the HTML for
 something as pedantic as a name. */
 .custom .quadrant{
     position: absolute;
-    background: url(ps3-assets/player-n.png);
-    height: 17px;
-    width: 111px;
+    background: url(quadrant.png);
+    height: 45px;
+    width: 45px;
     top: 140px;
     left: 240px;
 }
@@ -138,16 +138,16 @@ NOTE: Player orderin starts at 0, so p0 = Player 1 */
 start and select buttons. */
 .custom .arrows{
     position: absolute;
-    width: 205px;
-    height: 19px;
+    width: 71px;
+    height: 128px;
     top: 250px;
     left: 291px;
 }
 /* Setting the size and CSS sprite for the start adn select buttons */
 .custom .back, .custom .start{
-    background: url(ps3-assets/menus.png);
-    width: 34px;
-    height: 19px;
+    background: url(start-select.png);
+    width: 67px;
+    height: 33px;
 }
 .custom .back.pressed, .custom .start.pressed{
     background-position-y: -21px;
@@ -165,8 +165,8 @@ start and select buttons. */
 /* Positioning and size of the container for the face buttons */
 .custom .abxy{
     position: absolute;
-    width: 204px;
-    height: 205px;
+    width: 196px;
+    height: 97px;
     top: 156px;
     left: 538px;
 }
@@ -211,7 +211,7 @@ the CSS inline. */
 }
 .custom .stick{
     position: absolute;
-    background: url(ps3-assets/thumbs.png);
+    background: url(stick.png);
     height:105px;
     width: 105px;
 }
@@ -238,7 +238,7 @@ the CSS inline. */
     left: 74px;
 }
 .custom .face{
-    background: url(ps3-assets/dpad.png);
+    background: url(dpad.png);
     position: absolute;
 }
 .custom .face.up, .custom .face.down{
